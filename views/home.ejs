@@ -1,0 +1,23 @@
+<nav>
+    <div class="logo-container">
+        <h3>Logo</h3>
+    </div>
+    <ul class="nav-links mt-2">
+        <li><a href="/products">Products</a></li>
+        <li>
+            <a href="/auth/login" class="mt-4">
+                <button type="button">Login</button>
+            </a>
+        </li>
+        <li>
+            <a href="/auth/signup" class="mt-4">
+                <button type="button">SignUp</button>
+            </a>
+        </li>
+        <form id="logout-form" action="/auth/logout" method="POST">
+            <button type="submit" class="mt-4">Logout</button>
+        </form>
+    </ul>
+</nav>
+
+<h1>Welcome <%= email %></h1>
